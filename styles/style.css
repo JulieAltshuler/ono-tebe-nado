@@ -318,7 +318,8 @@
 }
 
 .footer__address {
-
+  margin: 0;
+  padding: 0;
 }
 
 .footer__menu-link {
