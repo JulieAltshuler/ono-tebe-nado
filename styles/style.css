@@ -3,7 +3,7 @@
 .header {
   margin: auto;
   display: grid;
-  grid-template-columns: 1.19fr 1fr 240px;
+  grid-template-columns: repeat(3, 1fr);
   padding: 92px 49px 92px 49px;
   align-items: center;
 }
@@ -45,6 +45,9 @@
 
 .header__logo {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__logo-image {
@@ -55,6 +58,8 @@
 .address__info {
   margin: 0;
   padding: 0;
+  max-width: 240px;
+  justify-self: end;
 }
 
 /* Класс cover */
@@ -158,7 +163,7 @@
   padding: 180px 50px 0 50px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: auto;
 }
 
 .lots__heading {
@@ -250,6 +255,7 @@
   word-wrap: break-word;
   margin: 30px 0 0 40px;
   border-bottom: 1px black solid;
+  align-self: flex-start;
 }
 
 /* Класс about */
@@ -260,6 +266,7 @@
   align-items: start;
   justify-items: center;
   gap: 25px;
+  margin: auto;
 }
 
 .about__logo {
@@ -286,7 +293,7 @@
   display: flex;
   gap: 25px;
   flex-direction: column;
-  max-width: 885px;
+  max-width: 100%;
 }
 
 .about__title {
@@ -310,7 +317,7 @@
 /* Класс footer */
 
 .footer {
-  padding: 180px 50px 100px 50px;
+  padding: 180px 50px 0 50px;
   display: grid;
   grid-template-columns: 240px auto 240px;
   flex-direction: row;
