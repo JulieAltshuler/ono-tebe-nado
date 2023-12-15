@@ -317,7 +317,7 @@
 /* Класс footer */
 
 .footer {
-  padding: 180px 50px 0 50px;
+  padding: 180px 50px 90px 50px;
   display: grid;
   grid-template-columns: 240px auto 240px;
   flex-direction: row;
